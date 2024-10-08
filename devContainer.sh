@@ -9,7 +9,7 @@
 #      1    it'll connect you automatically to that one
 #     >1    Gives you a 'dialog' based prompt to choose which one you want
 # 
-# wget https://raw.githubusercontent.com/JonMills-MRWA/helpful-scripts/refs/heads/main/devContainer.sh
+# wget -O ~/devContainer.sh https://raw.githubusercontent.com/JonMills-MRWA/helpful-scripts/refs/heads/main/devContainer.sh
 gitFolder=`realpath ~/git`
 
 
