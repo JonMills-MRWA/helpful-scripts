@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+# wget https://raw.githubusercontent.com/JonMills-MRWA/helpful-scripts/refs/heads/main/devContainer.sh
+
 gitFolder=`realpath ~/git`
 
 # Get a list of directories in ~/git/ that contain .devcontainer/devcontainer.json
