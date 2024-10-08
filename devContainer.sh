@@ -1,9 +1,18 @@
 #!/bin/bash
 
-
+#
+# Using ~/git as a base folder, this script is for connecting to running DevContainers which "belong" under that path
+# 
+# Depending on how many associated running devcontainers it finds the behaviour is as follows
+# 
+#      0    exit 1
+#      1    it'll connect you automatically to that one
+#     >1    Gives you a 'dialog' based prompt to choose which one you want
+# 
 # wget https://raw.githubusercontent.com/JonMills-MRWA/helpful-scripts/refs/heads/main/devContainer.sh
-
 gitFolder=`realpath ~/git`
+
+
 
 # Get a list of directories in ~/git/ that contain .devcontainer/devcontainer.json
 devcontainerDefs=$(find $gitFolder -type f -name "devcontainer.json" -path "*/.devcontainer/*" -printf "%h\n" | sort --ignore-case | uniq)
